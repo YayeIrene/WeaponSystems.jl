@@ -2,7 +2,7 @@ using WeaponSystems
 using Documenter
 
 DocMeta.setdocmeta!(WeaponSystems, :DocTestSetup, :(using WeaponSystems); recursive=true)
-
+#push!(LOAD_PATH,"../src/")
 makedocs(;
     modules=[WeaponSystems],
     authors="Irene Ndindabahizi, Royal Millitary Academy, Belgium",
