@@ -1,5 +1,5 @@
 
-
+abstract type AbstractTarget end
 mutable struct Target1D 
     size::Float64
     position::Float64
