@@ -1,5 +1,5 @@
 module WeaponSystems
-
+using ExternalBallistics
 # Write your package code here.
 include("types.jl")
 include("tank.jl")

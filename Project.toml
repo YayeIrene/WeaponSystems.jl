@@ -3,6 +3,9 @@ uuid = "9546f4ee-7fe2-43c4-b924-f2649be2f5c5"
 authors = ["Irene Ndindabahizi", "Royal Millitary Academy, Belgium"]
 version = "0.1.0"
 
+[deps]
+ExternalBallistics = "b491e135-ab2a-4d40-88dd-d272818f63e6"
+
 [compat]
 julia = "1"
 
