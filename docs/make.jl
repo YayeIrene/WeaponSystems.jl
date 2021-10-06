@@ -5,7 +5,7 @@ using Documenter
 push!(LOAD_PATH,"../src/")
 makedocs(;
     modules=[WeaponSystems],
-    authors="Irene Ndindabahizi, Royal Millitary Academy, Belgium",
+    #authors="Irene Ndindabahizi, Royal Millitary Academy, Belgium",
     #repo="https://github.com/YayeIrene/WeaponSystems.jl/blob/{commit}{path}#{line}",
     sitename="WeaponSystems.jl",
   #=  format=Documenter.HTML(;
@@ -19,5 +19,5 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/YayeIrene/WeaponSystems.jl",
+    repo="github.com/YayeIrene/WeaponSystems.jl.git",
 )

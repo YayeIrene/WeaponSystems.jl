@@ -1,3 +1,12 @@
+"""
+    The Hull is defined by :
+    * Φ: angle of rotation of the tank around the longitudinal axis. If the right side of the tank is lower than the left side,
+    than this angle is positif.
+    * Ψ: angle defined by the longitudinal axes of the tank and the horizontal plane
+    If the nose of the tank is higher than the back, this angle is positif
+    * Χ: angle defined by the the projection of the longitudinal axis of the tank into an horizontal plane
+    and the X axis
+"""
 mutable struct Hull
     Φ::Union{Float64,Nothing}
     ψ::Union{Float64,Nothing}
