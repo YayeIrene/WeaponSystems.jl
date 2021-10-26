@@ -18,18 +18,29 @@ end
 mutable struct Turret
      ξ::Union{Float64,Nothing}#azimuth
 end
-
+"""
+    The Canon is defined by:
+    * θ elevation angle (degrees)
+    * lw the length of the canon
+    * u₀ the muzzle velocity magnitude
+"""
 mutable struct Canon
      θ::Union{Float64,Nothing} #elevation
      lw::Float64
      u₀::Float64
 end
-
+"""
+    The sight is defined by:
+    * θ LOS elevation angle
+    * ξ LOS azimuth angle 
+"""
 mutable struct Sight
     θ::Float64
     ξ::Float64
 end
-
+"""
+    The tank is defined by: a hull, a turret, a canon, a sight and its position (altitude)
+"""
 mutable struct Tank
    hull::Hull
    turret::Turret

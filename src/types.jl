@@ -23,8 +23,11 @@ mutable struct TargetCirc
     ρ::Float64 #radius
     position::Float64
 end
-
+"""
+    TargetSphe(ρ,position)
+defines a spherical target by specifying the radius ρ and the position (range)
+"""
 mutable struct TargetSphe
-    ρ::Float64 #diameter
+    ρ::Float64 #radius
     position::Float64
 end 

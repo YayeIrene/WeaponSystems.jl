@@ -1,5 +1,6 @@
 module WeaponSystems
 using ExternalBallistics
+using ReferenceFrameRotations
 # Write your package code here.
 include("types.jl")
 include("tank.jl")

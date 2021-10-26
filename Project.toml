@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [deps]
 ExternalBallistics = "b491e135-ab2a-4d40-88dd-d272818f63e6"
+ReferenceFrameRotations = "74f56ac7-18b3-5285-802d-d4bd4f104033"
 
 [compat]
 julia = "1"

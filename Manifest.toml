@@ -297,9 +297,9 @@ version = "0.1.6"
 
 [[ExternalBallistics]]
 deps = ["DataFrames", "DifferentialEquations", "Distances", "Distributions", "Documenter", "Interpolations", "LinearAlgebra"]
-git-tree-sha1 = "596092d47cdf424b7857d847bb6382590a91ad6d"
+git-tree-sha1 = "2c0d1f3ea03d351e6f8ab127215763aa5775527c"
 repo-rev = "master"
-repo-url = "https://github.com/YayeIrene/ExternalBallistics.jl"
+repo-url = "C:\\Users\\PC1\\.julia\\dev\\ExternalBallistics"
 uuid = "b491e135-ab2a-4d40-88dd-d272818f63e6"
 version = "0.1.0"
 
@@ -747,6 +747,12 @@ version = "0.1.13"
 git-tree-sha1 = "45e428421666073eab6f2da5c9d310d99bb12f9b"
 uuid = "189a3867-3050-52da-a836-e630ba90ab69"
 version = "1.2.2"
+
+[[ReferenceFrameRotations]]
+deps = ["Crayons", "LinearAlgebra", "Printf", "StaticArrays"]
+git-tree-sha1 = "b2fc23750e12df6c8bc72cbb328020ed9a572e90"
+uuid = "74f56ac7-18b3-5285-802d-d4bd4f104033"
+version = "2.0.0"
 
 [[Requires]]
 deps = ["UUIDs"]
