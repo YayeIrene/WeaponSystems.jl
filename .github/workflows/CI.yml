@@ -52,6 +52,7 @@ jobs:
           julia --project=docs -e '
             using Pkg
             Pkg.add(url="https://github.com/YayeIrene/ExternalBallistics.jl")
+            Pkg.add(url="https://github.com/YayeIrene/WeaponSystems.jl")
             Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()'
       - run: |
