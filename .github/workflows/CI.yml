@@ -51,12 +51,12 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Pkg
-            Pkg.add(url="https://github.com/YayeIrene/ExternalBallistics.jl")'
+            Pkg.develop(PackageSpec(path=pwd()))
+            Pkg.instantiate()'
       - run: |
           julia --project=docs -e '
             using Pkg
-            Pkg.develop(PackageSpec(path=pwd()))
-            Pkg.instantiate()'
+            Pkg.add(url="https://github.com/YayeIrene/ExternalBallistics.jl")'      
       - run: |
           julia --project=docs -e '
             using Documenter: doctest
