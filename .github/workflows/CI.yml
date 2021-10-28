@@ -56,6 +56,7 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
+            Pkg.add https://github.com/YayeIrene/ExternalBallistics.jl
             using WeaponSystems
             DocMeta.setdocmeta!(WeaponSystems, :DocTestSetup, :(using WeaponSystems); recursive=true)
             doctest(WeaponSystems)'
