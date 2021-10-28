@@ -52,14 +52,12 @@ jobs:
           julia --project=docs -e '
             using Pkg
             Pkg.add(url="https://github.com/YayeIrene/ExternalBallistics.jl")
-            Pkg.add(url="https://github.com/YayeIrene/WeaponSystems.jl")
             Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()'
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
             using WeaponSystems
-            DocMeta.setdocmeta!(WeaponSystems, :DocTestSetup, :(using WeaponSystems); recursive=true)
             doctest(WeaponSystems)'
       - run: julia --project=docs docs/make.jl
         env:
