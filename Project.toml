@@ -4,6 +4,8 @@ authors = ["Irene Ndindabahizi", "Royal Millitary Academy, Belgium"]
 version = "0.1.0"
 
 [deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
 ExternalBallistics = "b491e135-ab2a-4d40-88dd-d272818f63e6"
 ReferenceFrameRotations = "74f56ac7-18b3-5285-802d-d4bd4f104033"
 
