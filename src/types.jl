@@ -31,4 +31,9 @@ defines a spherical target by specifying the radius ρ and the position (range)
 mutable struct TargetSphe <:AbstractTarget
     ρ::Float64 #radius
     position::Float64
+end
+
+mutable struct Fuze 
+    offset::Float64
+    height::Float64
 end 

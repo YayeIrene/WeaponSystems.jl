@@ -49,4 +49,9 @@ mutable struct Tank
    sight::Sight
    rWY::Float64
    latitude::Float64
+   position::Union{Vector{Float64},Nothing} 
+   velocity::Union{Vector{Float64},Nothing}
+   function Tank(hull::Hull,turret::Turret,canon::Canon,sight::Sight,rWY::Float64,latitude::Float64)
+    new(hull,turret,canon,sight,rWY,latitude,nothing,nothing)
+end
 end
