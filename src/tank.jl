@@ -28,6 +28,7 @@ mutable struct Canon
      θ::Union{Float64,Nothing} #elevation
      lw::Float64
      u₀::Float64
+     twist::Float64
 end
 """
     The sight is defined by:
@@ -47,4 +48,10 @@ mutable struct Tank
    canon::Canon
    sight::Sight
    rWY::Float64
+   latitude::Float64
+   position::Union{Vector{Float64},Nothing} 
+   velocity::Union{Vector{Float64},Nothing}
+   function Tank(hull::Hull,turret::Turret,canon::Canon,sight::Sight,rWY::Float64,latitude::Float64)
+    new(hull,turret,canon,sight,rWY,latitude,nothing,nothing)
+end
 end
